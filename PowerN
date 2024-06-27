@@ -1,0 +1,3 @@
+def power(self,N,R):
+        result = pow(N,R, (10**9) + 7)
+        return result

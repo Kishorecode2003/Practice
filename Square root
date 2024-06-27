@@ -1,0 +1,10 @@
+class Solution:
+    def floorSqrt(self, x): 
+    #Your code here
+        if(x==1):
+            return 1
+        for i in range(1,(x//2)+1):
+            if(i*i==x):
+                return math.sqrt(x)
+            else:
+                return math.floor(math.sqrt(x))

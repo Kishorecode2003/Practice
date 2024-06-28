@@ -7,3 +7,8 @@ class Solution:
 		    rev=rev*10+x
 		    n=n//10
 		return rev
+
+Method 2:
+n=int(input("Enter the Number: "))
+N=str(n)
+print(int(N[::-1]))

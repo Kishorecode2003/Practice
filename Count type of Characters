@@ -1,0 +1,23 @@
+Count type of Characters
+Difficulty: BasicAccuracy: 59.65%Submissions: 26K+Points: 1
+Given a string S, write a program to count the occurrence of Lowercase characters, Uppercase characters, Special characters and Numeric values in the string.
+Note: There are no white spaces in the string.
+
+
+class Solution:
+    def count (self,s):
+        # your code here
+        uc=0
+        lc=0
+        nc=0
+        sc=0
+        for i in s:
+            if(i.isupper()):
+                uc+=1
+            elif(i.islower()):
+                lc+=1
+            elif(i.isnumeric()):
+                nc+=1
+            else:
+                sc+=1
+        return(uc,lc,nc,sc)
